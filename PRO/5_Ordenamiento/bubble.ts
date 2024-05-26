@@ -63,3 +63,22 @@ function bubbleSort(array: number[]): number[] {
 let lista: number[] = [64, 34, 25, 12, 22, 11, 90];
 let listaOrdenada: number[] = bubbleSort(lista);
 console.log("Lista ordenada:", listaOrdenada);
+
+// Implementación del algoritmo Bubble Sort utilizando do-while
+function bubbleSortDoWhile(arreglo: number[]): { sortedArray: number[], swapCounter: number } {
+    let swapped: boolean;
+    let swapCounter: number = 0;
+
+    do {
+        swapped = false;
+        for (let i: number = 1; i < arreglo.length; i++) {
+            if (arreglo[i - 1] > arreglo[i]) {
+                intercambiar(arreglo, i - 1, i);
+                swapped = true;
+                swapCounter++;
+            }
+        }
+    } while (swapped);
+
+    return { sortedArray: arreglo, swapCounter };
+}
