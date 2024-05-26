@@ -3,7 +3,7 @@ Escribe una función que reciba el array de números como parámetro y devuelva 
 La función debe recorrer el array usando un bucle for.
 
 Ejercicio 2: Encuentra el número más grande del array
-Escribe una función que reciba el array de números como parámetro y devuelva el número más grande del array.
+Escribe una función que reciba el array de números como parámetro y devuelva el núero más grande del array.
 
 Ejercicio 3: Encuentra el número más chico del array
 Escribe una función que reciba el array de números como parámetro y devuelva el número más chico del array.
@@ -13,5 +13,15 @@ Escribe una función que reciba un array de números y un número como parámetr
 La función debe recorrer el array usando un bucle for.*/
 
 let arrayEjemplo: number[] = [1, 5, 4, 6, 8, 7, 6, 44, 56, 25, 56, 44];
+let arrayExample: number[] = [1, 1, 1]
 
 //Ejercicio 1
+
+function average (arr : number[]) : number {
+    let sum : number = 0
+    for (let i=0; i<arr.length; i++){
+        sum += arr[i] 
+    }
+    return (sum / arr.length)
+}
+console.log(`El promedio de la suma de los arrays es: ${average(arrayExample)}`)
