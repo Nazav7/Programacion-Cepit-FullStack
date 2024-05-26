@@ -26,3 +26,13 @@ function average (arr : number[]) : number {
 console.log(`El promedio de la suma de los arrays es: ${average(arrayExample)}`)
 
 //Ejercicio 2
+
+function getBiggest(arr : number[]) : number{
+    let biggest: number = -1;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > biggest) {
+            biggest = arr[i];
+        }       
+    }
+    return biggest;
+}
