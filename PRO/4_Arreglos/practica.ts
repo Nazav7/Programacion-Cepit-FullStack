@@ -12,7 +12,7 @@ Ejercicio 4: Encuentra el número de veces que aparece un elemento en un array
 Escribe una función que reciba un array de números y un número como parámetros, y devuelva la cantidad de veces que el número aparece en el array.
 La función debe recorrer el array usando un bucle for.*/
 
-let arrayExample: number[] = [1, 5, 4, 6, 8, 7, 6, 44, 56, 25, 56, 44]
+let arrayExample: number[] = [1, 5, 4, 6, 8, 7]
 
 //Ejercicio 1
 
