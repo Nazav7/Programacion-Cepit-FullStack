@@ -8,6 +8,4 @@
 pares de base y altura
 
 outputs
-area del triangulo
-
-
+area del triangulo*/
