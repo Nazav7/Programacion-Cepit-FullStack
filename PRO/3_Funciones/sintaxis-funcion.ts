@@ -1,4 +1,6 @@
 
+//podemos recibir desde otro lugar del programa, los datos que necesitamos utilizar para hacer la funcion
+
 //función hola mundo
 function holaMundo() {
     console.log("hola mundo")
