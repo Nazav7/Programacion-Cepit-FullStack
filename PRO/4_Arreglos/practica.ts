@@ -12,7 +12,7 @@ Ejercicio 4: Encuentra el número de veces que aparece un elemento en un array
 Escribe una función que reciba un array de números y un número como parámetros, y devuelva la cantidad de veces que el número aparece en el array.
 La función debe recorrer el array usando un bucle for.*/
 
-let arrayExample: number[] = [1, 5, 4, 6, 8, 7]
+let arrayExample: number[] = [1, 5, 4, 6, 8, 7, 7]
 
 //Ejercicio 1
 
@@ -36,3 +36,17 @@ function getBiggest(arr : number[]) : number{
     }
     return biggest;
 }
+
+//Ejercicio 3
+
+function getNtimes(arr : number [], num : number) : number{
+    let nTimes = 0
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == num) {
+        nTimes ++
+        }
+    }
+    return nTimes 
+}
+
+console.log(`El numero se repite ${getNtimes(arrayExample, 7)} veces`)
