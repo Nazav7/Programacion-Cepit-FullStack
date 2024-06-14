@@ -18,6 +18,11 @@ let numbers: number[] = [1, 2, 3, 4, 5]; //valores o elementos del arreglo que q
 // Declaración de un arreglo de cadenas de texto
 let fruits: string[] = ["apple", "banana", "orange", "mango"];
 
+// 2. Recorrer el arreglo con un bucle 'for' y mostrar cada elemento
+for (let i = 0; i < frutas.length; i++) {
+    console.log(frutas[i]);
+}
+
 // Declaración de un arreglo de cualquier tipo (usando 'any')
 //let mixedArray: any[] = [1, "two", true, { key: "value" }];
 
@@ -37,7 +42,7 @@ console.log(fruits[2]);  // Salida: grape
 console.log(numbers.length); // Salida: 5
 console.log(fruits.length);  // Salida: 4
 
-
+//------------------------------------------------------------------------
 //Funciones para crear numero al azar, cargar el arreglo, y mostrarlos.
 
 //Funcion para crear un numero ramdom entre 0 y numAzar
