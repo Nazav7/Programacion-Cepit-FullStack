@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*Por defecto, el body no tiene una altura fija y se ajusta al contenido que contiene.*/
+}
+
+.container {
+    border: 2px solid black;
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+#box1, #box2 {
+    background-color: lightcoral;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+}
+
+button{
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    border-color: rgb(255, 255, 255);
+    border: none; 
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
+
+.hidden {
+    visibility: hidden;
+}

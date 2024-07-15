@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM en JavaScript</title>
+    <style>
+        .rojo {
+            color: red;
+        }
+        .azul {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sección para modificar contenido -->
+    <div id="miDiv" class="rojo">Texto inicial</div>
+    <button onclick="cambiarTexto()">Cambiar Texto</button>
+
+    <!-- Lista para agregar y eliminar elementos -->
+    <ul id="miLista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+    </ul>
+    <button onclick="agregarElemento()">Agregar Elemento</button>
+    <button onclick="eliminarElemento()">Eliminar Elemento</button>
+
+    <!-- Imagen para cambiar atributos -->
+    <img id="miImagen" src="imagen-inicial.jpg" alt="Descripción inicial" width="200">
+
+    <!-- Input para cambiar valor -->
+    <input id="miInput" type="text" value="Valor inicial">
+
+    <!-- Enlace para cambiar href -->
+    <a id="miEnlace" href="https://www.ejemplo.com">Ir a Ejemplo</a>
+
+    <!-- Botón para eventos -->
+    <button id="miBoton">Haz clic en mí</button>
+
+    <!-- Script con código JavaScript -->
+    <script>
+        // Función para cambiar el texto de un div
+        function cambiarTexto() {
+            let elemento = document.getElementById("miDiv");
+            elemento.innerHTML = "Nuevo texto modificado";
+        }
+
+        // Función para agregar un nuevo elemento a la lista
+        function agregarElemento() {
+            let lista = document.getElementById("miLista");
+            let nuevoElemento = document.createElement("li");
+            nuevoElemento.textContent = "Nuevo Elemento";
+            lista.appendChild(nuevoElemento);
+        }
+
+        // Función para eliminar el último elemento de la lista
+        function eliminarElemento() {
+            let lista = document.getElementById("miLista");
+            if (lista.children.length > 0) {
+                lista.removeChild(lista.lastElementChild);
+            }
+        }
+
+        // Cambiar estilos y clases de un elemento
+        let miDiv = document.getElementById("miDiv");
+        miDiv.classList.remove("rojo");
+        miDiv.classList.add("azul");
+
+        // Manipular atributos de una imagen
+        let imagen = document.getElementById("miImagen");
+        imagen.src = "nueva-imagen.jpg";
+        imagen.alt = "Nueva descripción de la imagen";
+
+        // Obtener y establecer el valor de un input
+        let input = document.getElementById("miInput");
+        input.value = "Nuevo valor";
+
+        // Obtener y establecer la URL de un enlace
+        let enlace = document.getElementById("miEnlace");
+        enlace.href = "https://www.nuevo-enlace.com";
+
+        // Crear y añadir eventos a un elemento
+        let boton = document.getElementById("miBoton");
+        boton.addEventListener("click", function() {
+            alert("¡Has hecho clic en el botón!");
+        });
+    </script>
+</body>
+</html>

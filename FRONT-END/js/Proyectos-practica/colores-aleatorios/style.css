@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #b5fcff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    padding: 1em 1em 2em 1em;
+    border: 0.1em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+
+.card{
+    background-color: #b5fcff ;
+    width: 100%;
+    height: 250px;
+    border-radius: 0.5em;
+}
+
+p {
+    font-size: clamp(30px, 5vw, 4em); /* Tamaño mínimo 12px, flexible 5vw, máximo 4em */
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+button{
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    font-size: clamp(14px, 2vw, 20px);
+    border-color: rgb(255, 255, 255);
+    
+    background-color: #6c757d; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+button:hover {
+    background-color: #5a6268; /* Color de fondo al pasar el ratón */
+}
+
+
+button:active {
+    background-color: #41464c; /* Color de fondo al hacer clic */
+}
