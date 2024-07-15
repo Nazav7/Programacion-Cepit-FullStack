@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box; /*el ancho y el alto de la caja (w y h) incluirán tanto el contenido, el padding y el borde. Esto significa que el borde estará dentro de la caja, en lugar de agregar espacio adicional fuera de la caja.*/
+}
+
+.container {
+    /*display: flex;
+    flex-direction: column;*/
+    /*gap: 4px;*/
+    background-color:rgb(240, 240, 203);
+    /*pat:height:100vh*/
+}
+
+.header{
+    display: flex;
+    /*gap: 4px;*/
+    border:2px solid #f19af1;
+    /*pat: width: 100%*/
+}
+
+.box-1 {
+    height: 100px;
+    width: 20%;
+    background-color: rgb(154, 224, 161);
+    /**/ margin: 5px;
+}
+
+.box-2 {
+    height: 100px;
+    width: 80%;
+    background-color: rgb(175, 191, 175);
+    /**/ margin: 5px 5px 5px 0px
+}
+
+.nav {
+    background-color: white;
+    height: 50px;
+    border: 2px solid #070707;
+    /**/margin: 0px 5px
+
+}
+
+.main{
+    display: flex;
+    /*gap: 4px;*/
+    border:2px solid rgb(54, 68, 253);
+}
+
+.box-4 {
+    background-color: rgb(204, 160, 239);
+    height: 100vh;
+    width: 20%;
+    margin: 5px
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    /*gap: 4px;*/
+    width: 100%; /*si no pongo 100 quedan lineas, hacer pruebas de tamanios en contenedores*/
+    border:2px solid #070707;
+}
+
+.content-up{
+    display: flex;
+    border: 2px solid #cf1e1e;
+}
+
+.box-5 {
+    background-color: #97b7e0;
+    height: 200px;
+    width: 50%;
+    /**/margin: 5px 5px 5px 0px
+}
+.box-6 {
+    background-color: #f19af1;
+    height: 200px;
+    width: 50%;
+    /**/margin: 5px 5px 5px 0px
+}
+
+.box-7 {
+    background-color: #f4d56e;
+    height: 100%;
+    /*width: 100%; si le pongo esto se traspasa*/
+    /**/margin: 0px 5px 5px 0px
+}
+
+.box-8{
+    background-color: #a3e5f7;
+    border: 2px dashed #070707;
+    height: 100px;
+    /*width: 100%; si le pongo esto se traspasa*/
+    /**/margin: 0px 5px 5px 5px;
+}

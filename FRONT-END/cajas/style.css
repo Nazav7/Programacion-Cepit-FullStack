@@ -1,0 +1,21 @@
+.encabezado{
+    background-color: rgb(147, 145, 145);
+    height: 100px;
+    width: 100%;
+}
+.izquierda{
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    width: 250px;
+    color: white;
+}
+.derecha{
+    background-color: rgb(45, 41, 41);
+    height: 300px;
+    width: 200px;
+}
+.footer{
+    background-color: rgb(74, 172, 214);
+    height: 100px;
+   
+}

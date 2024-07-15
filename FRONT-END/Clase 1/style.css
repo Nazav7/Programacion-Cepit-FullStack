@@ -1,0 +1,40 @@
+/* Selector de tipo */
+p {
+    color: red;
+    font-size: 20px;
+}
+
+/* Selector de clase */
+.colorVerde {
+    color: green;
+}
+
+/* Selector de id */
+#especial {
+    color: yellow;
+    font-size: 50px;
+}
+
+body {
+    background-image: url("../imagenes/descarga.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Listas */
+ul {
+    list-style-type: circle;
+}
+
+.lista_cuad {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: lower-alpha;
+}
+
+.lista_imag {
+    list-style-image: url("http://forum.geonames.org/gforum/templates/default/images/icon_mini_register.gif")
+}

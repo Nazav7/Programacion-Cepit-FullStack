@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box; /*el ancho y el alto de la caja (w y h) incluirán tanto el contenido, el padding y el borde. Esto significa que el borde estará dentro de la caja, en lugar de agregar espacio adicional fuera de la caja.*/
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.header{
+    display: flex;
+    gap: 4px;
+}
+
+.box-1 {
+    background-color: rgb(154, 224, 161);
+    height: 100px;
+    width: 20%;
+}
+
+.box-2 {
+    background-color: rgb(175, 191, 175);
+    height: 100px;
+    width: 80%;
+}
+
+.box-3 {
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    border: 2px solid #070707;
+}
+
+.box-4 {
+    background-color: rgb(204, 160, 239);
+    height: 100vh;
+    width: 20%;
+}
+
+.main{
+    display: flex;
+    gap: 4px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    width: 100%; /*si no pongo 100 quedan lineas, hacer pruebas de tamanios en contenedores*/
+    
+}
+
+.box-5 {
+    background-color: #97b7e0;
+    height: 100px;
+    width: 49.5%;
+}
+.box-6 {
+    background-color: #f19af1;
+    height: 100px;
+    width: 50%
+}
+
+.box-7 {
+    background-color: #f4d56e;
+    height: 85vh;
+    width: 100%;
+}
+
+.box-8{
+    background-color: #a3e5f7;
+    border: 2px dashed #070707;
+    height: 100px;
+    width: 100%;
+}

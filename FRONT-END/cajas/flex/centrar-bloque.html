@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="centrar-bloque.css">
+</head>
+
+<body>
+    <div class="bloque1">
+        <h1>Bloque 1 </h1>
+    </div>
+    <div class="bloque2">
+        <h1>Bloque 2</h1>
+    </div>
+    <div class="bloque3">
+        <h1>Bloque 3</h1>
+        <div class="bloque1">
+            <h1>Bloque 1 </h1>
+        </div>
+        <div class="bloque2">
+            <h1>Bloque 2</h1>
+        </div>
+    </div>
+
+    <style>
+        .block {
+            display: block;
+            width: 100px;
+            background-color: lightblue;
+            margin: 5px 0;
+        }
+        .inline {
+            display: inline;
+            background-color: lightcoral;
+            margin: 5px;
+        }
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+            background-color: lightgreen;
+            margin: 10px;
+            padding: 10px;
+        }
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            background-color: lightyellow;
+            margin: 10px;
+            padding: 10px;
+        }
+        .flex-item {
+            background-color: darkgray;
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Display Block vs Inline</h2>
+    <div class="block">Block Element 1</div>
+    <div class="block">Block Element 2</div>
+    <span class="inline">Inline Element 1</span>
+    <span class="inline">Inline Element 2</span>
+
+    <h2>Flex Direction Column vs Row</h2>
+    <div class="flex-column">
+        <div class="flex-item">Flex Column Item 1</div>
+        <div class="flex-item">Flex Column Item 2</div>
+        <div class="flex-item">Flex Column Item 3</div>
+    </div>
+    <div class="flex-row">
+        <div class="flex-item">Flex Row Item 1</div>
+        <div class="flex-item">Flex Row Item 2</div>
+        <div class="flex-item">Flex Row Item 3</div>
+    </div>
+</body>
+</body>
+
+</html>

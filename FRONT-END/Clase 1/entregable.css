@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 2rem;
+}
+
+h1, h2, p, a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1rem;
+}
+
+span{
+    color:brown
+}
+
+.content-1, .content-2{
+    background-color: rgb(254, 233, 222);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.link {
+    color: #2167ca;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #60aafb;
+    text-decoration:underline;
+}
+
+.link:visited {
+    color: brown;
+}
