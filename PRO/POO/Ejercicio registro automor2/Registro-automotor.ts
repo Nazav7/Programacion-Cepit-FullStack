@@ -10,10 +10,6 @@ export class RegistroAutomotor {
     getVehiculos(): Vehiculo[] {
         return this._vehiculos;
     }
-    //Setters
-    setVehiculo(vehiculo: Vehiculo[]){
-        this._vehiculos = vehiculo
-    }
 
     agregarVehiculo(vehiculo: Vehiculo): void{
     this._vehiculos.push(vehiculo)}
@@ -21,5 +17,11 @@ export class RegistroAutomotor {
     eliminarVehiculo(vehiculo: Vehiculo){
         this._vehiculos = this._vehiculos.filter(element=> element !== vehiculo)
     }
+
+    modificarVehiculo(index: number, vehiculo: Vehiculo): void {
+        if (this._vehiculos[index]) {
+          this._vehiculos[index] = vehiculo;
+        }
+      }
 
 }

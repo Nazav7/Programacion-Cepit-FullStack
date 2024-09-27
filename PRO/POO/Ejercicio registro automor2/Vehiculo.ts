@@ -45,11 +45,11 @@ export class Vehiculo {
         this._anio = anio
     }
 
-    modificarVehiculo(nuevoTipo:string, nuevaMarca: string, nuevoModelo: string, nuevoAnio: number){
-        this._tipo = nuevoTipo
-        this._marca = nuevaMarca
-        this._modelo = nuevoModelo
-        this._anio = nuevoAnio
-    }
+    // modificarVehiculo(nuevoTipo:string, nuevaMarca: string, nuevoModelo: string, nuevoAnio: number){
+    //     this._tipo = nuevoTipo
+    //     this._marca = nuevaMarca
+    //     this._modelo = nuevoModelo
+    //     this._anio = nuevoAnio
+    // }
 
 }

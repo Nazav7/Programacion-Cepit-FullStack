@@ -25,13 +25,15 @@ console.log(registroAutomotor.getVehiculos());
 registroAutomotor.eliminarVehiculo(vehiculo2);
 
 // Modificar vehiculo
-vehiculo1.modificarVehiculo("Camion", "Toyota", "M123", 2019)
+// vehiculo1.modificarVehiculo("Camion", "Toyota", "M123", 2019)
+vehiculo1.setModelo('nuevoModelo')
+registroAutomotor.modificarVehiculo(0, vehiculo1);
 
 // Mostrar vehiculos despues de eliminar y modificar
 console.log("Mostrar vehiculos despues de eliminar vehiculo2 y modificar vehiculo1")
 console.log(registroAutomotor.getVehiculos());
 
-// console.log(registroAutomotor.setVehiculo(vehiculos3))
+
 
 
 
