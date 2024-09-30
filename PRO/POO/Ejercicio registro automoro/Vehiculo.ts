@@ -25,9 +25,9 @@ export class Vehiculo {
         this._modelo = modelo
     }
 
-    modificarVehiculo(nuevaMarca: string, nuevoModelo: string){
-        this._marca = nuevaMarca
-        this._modelo = nuevoModelo
-    }
+    // modificarVehiculo(nuevaMarca: string, nuevoModelo: string){
+    //     this._marca = nuevaMarca
+    //     this._modelo = nuevoModelo
+    // }
 
 }
